@@ -1,0 +1,6 @@
+[include]
+    path = partial/user.ini;
+    path = partial/colors.ini;
+    path = partial/aliases.ini;
+    path = partial/branches.ini;
+    path = partial/core.ini;
