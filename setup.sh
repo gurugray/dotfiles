@@ -26,3 +26,4 @@ SETUP_DIR=`pwd`
 
 source vim/setup.sh
 source git/setup.sh
+#source bash/setup.sh
