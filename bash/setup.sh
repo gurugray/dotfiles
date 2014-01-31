@@ -8,4 +8,11 @@ create_configs() {
     success "Configure Bash"
 }
 
+modules_setup() {
+	git clone git://github.com/arialdomartini/oh-my-git.git --depth 1
+
+	success "Bash Modules"
+}
+
 create_configs
+modules_setup
