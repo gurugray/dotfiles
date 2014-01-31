@@ -21,5 +21,11 @@ create_symlinks() {
     success "Create SymLinks"
 }
 
+npm_setup() {
+    npm install -g jscs
+    npm install -g jshint
+    success "NPM Setup"
+}
+
 create_symlinks
 setup_vundle
