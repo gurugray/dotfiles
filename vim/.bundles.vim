@@ -5,6 +5,7 @@ Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-fugitive.git'
 Bundle 'bling/vim-airline'
 Bundle 'scrooloose/syntastic'
+Bundle 'terryma/vim-multiple-cursors'
 
 "CSS
 Bundle 'hail2u/vim-css3-syntax'
