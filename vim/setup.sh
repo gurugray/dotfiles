@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
 
+#common
+source ../common.sh
+setup_dir
+
 setup_vundle() {
     system_shell="$SHELL"
     export SHELL='/bin/sh'
     vim -u "$HOME/.vim/.vimrc" +BundleInstall! +BundleClean +qall
     export SHELL="$system_shell"
-
-    ret="$?"
 
     success "Setup bundles"
 }
@@ -17,7 +19,6 @@ create_symlinks() {
     lnif "$endpath/vim/.vimrc" "$HOME/.vimrc"
     lnif "$endpath/vim" "$HOME/.vim"
 
-    ret="$?"
     success "Create SymLinks"
 }
 
