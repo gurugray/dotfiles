@@ -23,10 +23,11 @@ create_symlinks() {
 }
 
 npm_setup() {
-    npm install -g jscs
-    npm install -g jshint
+    sudo npm install -g jscs
+    sudo npm install -g jshint
     success "NPM Setup"
 }
 
+npm_setup
 create_symlinks
 setup_vundle

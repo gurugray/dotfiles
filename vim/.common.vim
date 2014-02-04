@@ -47,13 +47,12 @@ set background=light
 syntax enable
 
 if filereadable(expand("~/.vim/bundle/vim-colors-solarized/colors/solarized.vim"))
-	let g:solarized_termcolors=256
-	let g:solarized_termtrans=1
-	let g:solarized_contrast="normal"
-	let g:solarized_visibility="normal"
-	colorscheme solarized             " Load a colorscheme
+    let g:solarized_termcolors=256
+    let g:solarized_termtrans=1
+    let g:solarized_contrast="normal"
+    let g:solarized_visibility="normal"
+    colorscheme solarized             " Load a colorscheme
 endif
-
 
 if !exists('g:airline_theme')
     let g:airline_theme = 'solarized'
@@ -63,3 +62,6 @@ if !exists('g:airline_powerline_fonts')
     let g:airline_left_sep='›'  " Slightly fancier than '>'
     let g:airline_right_sep='‹' " Slightly fancier than '<'
 endif
+
+"set spell
+"set spelllang=ru,en
