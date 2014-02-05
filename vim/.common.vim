@@ -40,6 +40,7 @@ set nofoldenable
 
 set scrolljump=5
 set scrolloff=3
+set pastetoggle=<F3>
 
 set synmaxcol=1000
 
