@@ -42,6 +42,7 @@ set scrolljump=5
 set scrolloff=3
 set pastetoggle=<F3>
 set mouse=a
+set backspace=indent,eol,start
 
 set synmaxcol=1000
 
