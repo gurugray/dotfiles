@@ -41,8 +41,19 @@ set nofoldenable
 set scrolljump=5
 set scrolloff=3
 set pastetoggle=<F3>
-set mouse=a
 set backspace=indent,eol,start
+
+function! ToggleMouse()
+    if &mouse == 'a'
+        set mouse=
+        echo "Mouse usage disabled"
+    else
+        set mouse=a
+        echo "Mouse usage enabled"
+    endif
+endfunction
+
+nnoremap MM :call ToggleMouse()<CR>
 
 set synmaxcol=1000
 
