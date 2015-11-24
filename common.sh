@@ -24,5 +24,5 @@ function lnif {
 }
 
 function setup_dir {
-    SETUP_DIR=`dirname $PWD`
+    export SETUP_DIR="$(dirname "$(readlink -f "$0")")"
 }

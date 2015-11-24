@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-#common
-source ../common.sh
-setup_dir
-
 setup_vundle() {
     system_shell="$SHELL"
     export SHELL='/bin/sh'
